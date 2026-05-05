@@ -193,6 +193,9 @@ function renderFooter() {
                 <p style="color: var(--text-tertiary); font-size: var(--text-sm);">
                     © <?php echo date('Y'); ?> Anshu Jewels. All rights reserved.
                 </p>
+                <p style="color: var(--text-tertiary); font-size: var(--text-sm); margin-top: var(--space-2);">
+                    Made with <span style="color: #e25555;">&hearts;</span> by <a href="https://www.instagram.com/manvith_.acharya/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; font-weight: 500;">Manvith G K</a>
+                </p>
             </div>
         </div>
     </footer>
