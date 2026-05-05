@@ -1,0 +1,16 @@
+# Logs
+*.log
+sync_log.txt
+
+# Database dumps (optional, but usually good to ignore to prevent large files or sensitive data)
+# Commented out below in case you WANT to push the sample/schema SQL files.
+# database/*.sql
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
