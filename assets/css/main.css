@@ -886,13 +886,77 @@ a:hover {
     .admin-header h1 {
         font-size: var(--text-2xl) !important;
     }
+    .admin-header > div:last-child {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: var(--space-2) !important;
+    }
+    .admin-header .btn {
+        width: 100% !important;
+        justify-content: center !important;
+    }
     .settings-tabs {
         flex-wrap: wrap;
         gap: var(--space-2);
     }
     .tab-button {
         width: 100%;
-        text-align: left;
+        text-align: center;
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-md);
+        margin-bottom: var(--space-2);
+    }
+    /* Action Buttons containers */
+    .product-actions {
+        flex-direction: column !important;
+        gap: var(--space-2) !important;
+    }
+    .product-actions .btn {
+        width: 100% !important;
+        margin-bottom: 0 !important;
+    }
+    /* General admin buttons */
+    .admin-content .btn:not(.data-table .btn) {
+        width: 100% !important;
+        justify-content: center !important;
+        margin-bottom: var(--space-2) !important;
+        display: flex !important;
+        box-sizing: border-box !important;
+    }
+    /* Modals & Forms button groups */
+    .admin-content form > div[style*="display: flex"],
+    .modal-content form > div[style*="display: flex"],
+    .modal-content > div[style*="display: flex"] {
+        flex-direction: column !important;
+        gap: var(--space-2) !important;
+    }
+    /* Table buttons */
+    .data-table .btn {
+        width: auto !important;
+        margin-bottom: 0 !important;
+        padding: var(--space-2) var(--space-3) !important;
+        display: inline-flex !important;
+    }
+    
+    /* Filters bar & Dropdowns */
+    .filters-bar form,
+    .admin-content form[method="GET"] {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+    .filters-bar .form-input,
+    .filters-bar .form-select,
+    .admin-content form[method="GET"] .form-input,
+    .admin-content form[method="GET"] .form-select {
+        width: 100% !important;
+        margin-bottom: var(--space-2) !important;
+    }
+
+    /* Update Status inline grids */
+    .admin-content div[style*="grid-template-columns: 1fr 1fr"],
+    .modal-content div[style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
     }
 }
 @media (max-width: 480px) {
